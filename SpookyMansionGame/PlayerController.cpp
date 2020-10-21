@@ -1,3 +1,6 @@
+#ifndef PLAYERCONTROLLER_CPP
+#define PLAYERCONTROLLER_CPP
+
 #include "olcPixelGameEngine.h"
 #include "Entity.cpp"
 #include "vector_ops.cpp"
@@ -9,7 +12,7 @@ public:
 	olc::vi2d vSize = { 32, 64 };
 	olc::vf2d vSpeed = { 500.0f, 500.0f };
 
-	Player(olc::vi2d a, std::string b) : Entity{ a, vSize, vSpeed, b } {
+	Player(olc::vi2d a, std::string b) : Entity( a, vSize, vSpeed, b ) {
 
 	}
 	
@@ -27,3 +30,5 @@ public:
 
 // have to define member funtions inside the class or you get a LNK2005 error
 // multiplying a vi2d by a decimal makes the output zero - vi2d is for 32bit ints ONLY, use vf2d for floats
+
+#endif

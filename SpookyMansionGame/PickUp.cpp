@@ -1,3 +1,6 @@
+#ifndef PICKUP_CPP
+#define PICKUP_CPP
+
 #include "olcPixelGameEngine.h"
 #include "Entity.cpp"
 // Class to handle pick ups : inherits from Entity
@@ -6,3 +9,5 @@ class PickUp {
 
 
 };
+
+#endif

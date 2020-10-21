@@ -1,3 +1,6 @@
+#ifndef BULLET_CPP
+#define BULLET_CPP
+
 #include "olcPixelGameEngine.h"
 #include "Entity.cpp"
 // Class to handle bullets : inherits from Entity
@@ -6,3 +9,5 @@ class Bullet {
 
 
 };
+
+#endif
